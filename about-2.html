@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>About Us</title>
+        <script>background-color: blue; font-family: Verdana;</script>
+    <body>
+        <h1>The Team</h1>
+        <p>This are the members working on the development of better lives in our community.</p>
+            <ul>
+                {% for x in pips %}
+                <li>{{ x.firstname }} {{ x.lastname }}</li>
+                {% endfor %}
+            </ul>
+    </body>
+</html>
+
